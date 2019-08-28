@@ -2,6 +2,15 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 
+void convert(string str){
+	int x;
+	double y;
+	stringstream ss(str);
+	ss>>x;
+	cout<<"the value of integer : "<<x<<endl;
+	ss>>y;
+	cout<<"the value of double : "<<y<<endl;
+	}
 void count(string str){
 	stringstream ss(str);
   	string word;
@@ -38,9 +47,11 @@ void removespace(string str){
 
 int main(){
 string s="Raja Reddy is the best there ever was";
+string number="12345.66";
 count(s);
 frequency(s);
 removespace(s);
-
+convert(s); //the output is:  the value of integer : 12345
+// the value of double : 0.66
 return 0;
 }
