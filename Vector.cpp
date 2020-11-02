@@ -12,7 +12,7 @@ int main(){
     vector<int> d(b.begin(),b.end()); // initialises the vector from the specified range of another vector
   
   //Iterators
-    for(vector<int>::iterator i=b.begin();i<b.end();i++) 
+    for(vector<int>::iterator i=b.begin();i<b.end();i++)  or   for(auto i=b.begin();i<b.end();i++)
     cout<<*i<<" "; //use of begin() and end()
 
 
